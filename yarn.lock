@@ -1293,7 +1293,14 @@ atomic-batcher@^1.0.2:
   resolved "https://registry.yarnpkg.com/atomic-batcher/-/atomic-batcher-1.0.2.tgz#d16901d10ccec59516c197b9ccd8930689b813b4"
   integrity sha1-0WkB0QzOxZUWwZe5zNiTBom4E7Q=
 
-"automerge@github:automerge/automerge#opaque-strings":
+automerge-backend-asmjs@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/automerge-backend-asmjs/-/automerge-backend-asmjs-0.1.0.tgz#0e1c894409028136274bdcc79bcf976727041e74"
+  integrity sha512-NNUfXE/2WZkXHMYxcpaVSPsPTpYIxJOZE+IwFfyDke2W8kIpIMvdoy25aRDrM06Tdq+/5WUpGHtY7KX43W72+g==
+  dependencies:
+    immutable "^3.8.2"
+
+"automerge@git+https://github.com/orionz/automerge#asmjs", "automerge@github:automerge/automerge#opaque-strings":
   version "0.12.2-beta.0"
   resolved "https://codeload.github.com/automerge/automerge/tar.gz/340ca073b716f28426175e221766352e52d84daf"
   dependencies:
@@ -3560,6 +3567,11 @@ fast-deep-equal@^2.0.1:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
   integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
 
+fast-deep-equal@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.1.tgz#545145077c501491e33b15ec408c294376e94ae4"
+  integrity sha512-8UEa58QDLauDNfpbrX55Q9jrGHThw2ZMdOky5Gl1CDtVeJDPVrG4Jxx1N8jw2gkWaff5UUuX1KJd+9zGe2B+ZA==
+
 fast-diff@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.1.2.tgz#4b62c42b8e03de3f848460b639079920695d0154"
@@ -4536,11 +4548,11 @@ hypercore@^8.2.5:
   optionalDependencies:
     fd-lock "^1.0.2"
 
-"hypermerge@github:automerge/hypermerge":
+"hypermerge@git+https://github.com/alexjg/hypermerge#automerge-asmjs":
   version "2.0.0-beta.25"
-  resolved "https://codeload.github.com/automerge/hypermerge/tar.gz/4d605f53b12608ba29a6080c06fc4722e09d0e14"
+  resolved "git+https://github.com/alexjg/hypermerge#56513781ff4c6554ef55129206a76df306195163"
   dependencies:
-    automerge "github:automerge/automerge#opaque-strings"
+    automerge "git+https://github.com/orionz/automerge#asmjs"
     better-sqlite3 "^5.4.3"
     bs58 "^4.0.1"
     copyfiles "^2.1.1"
