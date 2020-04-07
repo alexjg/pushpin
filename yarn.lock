@@ -1300,10 +1300,12 @@ automerge-backend-asmjs@^0.1.0:
   dependencies:
     immutable "^3.8.2"
 
-"automerge@git+https://github.com/orionz/automerge#asmjs", "automerge@github:automerge/automerge#opaque-strings":
-  version "0.12.2-beta.0"
-  resolved "https://codeload.github.com/automerge/automerge/tar.gz/340ca073b716f28426175e221766352e52d84daf"
+"automerge@git+https://github.com/orionz/automerge#asmjs":
+  version "0.13.0"
+  resolved "git+https://github.com/orionz/automerge#24c23a11e34baea505ffc1035cadb2c52bb4f6d1"
   dependencies:
+    automerge-backend-asmjs "^0.1.0"
+    fast-deep-equal "^3.1.1"
     immutable "^3.8.2"
     transit-immutable-js "^0.7.0"
     transit-js "^0.8.861"
